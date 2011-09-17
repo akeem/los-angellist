@@ -1,0 +1,710 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/status_update
+    body: !!null 
+    headers:
+      user_id:
+      - '671'
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 400
+      message: Bad Request
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Thu, 15 Sep 2011 03:24:03 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '400'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      cache-control:
+      - no-cache
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '995'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '17'
+      content-length:
+      - '91'
+    body: ! '{"success":false,"error":{"type":"bad_endpoint","message":"That endpoint
+      does not exist."}}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/status_update?user_id=671
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 400
+      message: Bad Request
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Thu, 15 Sep 2011 03:26:25 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '400'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      cache-control:
+      - no-cache
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '971'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '14'
+      content-length:
+      - '91'
+    body: ! '{"success":false,"error":{"type":"bad_endpoint","message":"That endpoint
+      does not exist."}}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/startup_roles
+    body: !!null 
+    headers:
+      user_id:
+      - '671'
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 404
+      message: Not Found
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Thu, 15 Sep 2011 04:21:19 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '404'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      cache-control:
+      - no-cache
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '937'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '21'
+      content-length:
+      - '97'
+    body: ! '{"success":false,"error":{"type":"not_found","message":"The specified
+      item could not be found."}}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/status_updates?user_id=671
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Thu, 15 Sep 2011 04:23:14 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '925'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '32'
+      etag:
+      - ! '"edd6b67286f5860dce0bc38d10d5dc4c"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '417'
+    body: ! '{"status_updates":[{"id":16294,"message":"The AngelList API gets more
+      and more robust every day. Check out the docs at http://angel.co/api and keep
+      the feedback coming!","created_at":"2011-09-02T04:06:11Z"},{"id":11587,"message":"Working
+      on the AngelList API. Excited to already have a few adopters on board for the
+      alpha product.","created_at":"2011-08-09T22:08:32Z"}],"total":2,"per_page":50,"page":1,"last_page":1}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/startup_roles?user_id=671
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Thu, 15 Sep 2011 04:23:17 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '921'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '33'
+      etag:
+      - ! '"aead71f09321545c0c1057c8e9cf601b"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '534'
+    body: ! '{"startup_roles":[{"id":13186,"role":"team_member","created_at":"2011-03-18T00:36:15Z","confirmed":true,"startup":{"id":6702,"hidden":false,"name":"AngelList","angellist_url":"http://angel.co/angellist","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/6702-766d1ce00c99ce9a5cbc19d0c87a436e-medium.","product_desc":"AngelList
+      is an online community that helps startups find investors. And investors find
+      startups. Currently works across Series Seed, A, B, and C.","follower_count":351,"company_url":"http://angel.co"}}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/users/671/followers
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Thu, 15 Sep 2011 04:23:21 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '917'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '691'
+      etag:
+      - ! '"5efa7e67f3e6c9b0b6a2eb0b1cbe470d"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '14208'
+    body: ! '{"users":[{"name":"Vladimir Mitrovic","id":57831,"bio":"Software engineer\nVast.com","follower_count":0,"angellist_url":"http://angel.co/_uranium_","image":"https://s3.amazonaws.com/photos.angel.co/users/57831-medium?1316052622"},{"name":"Jason
+      A. Hoffman","id":9861,"bio":"Founded Joyent. I specialize in talent and revenue
+      generation and all activities required to support it.","follower_count":890,"angellist_url":"http://angel.co/jason-a-hoffman","image":"https://s3.amazonaws.com/photos.angel.co/users/9861-medium?1307870800"},{"name":"Jeff
+      Robinson","id":34987,"bio":"Founder & CEO of http://www.birthdayslam.com\nMaking
+      Birthdays Fun,Easy and Social\nInternet Entrepreneur,Investor,Advisor,Author
+      in 2012","follower_count":165,"angellist_url":"http://angel.co/jeff-robinson","image":"https://s3.amazonaws.com/photos.angel.co/users/34987-medium?1306600912"},{"name":"William
+      Widugiris III","id":17463,"bio":"WW3Communications","follower_count":53,"angellist_url":"http://angel.co/ww3","image":"https://s3.amazonaws.com/photos.angel.co/users/17463-medium?1314650214"},{"name":"Bobby
+      Rivera","id":51659,"bio":"Designer/Entrepreneur","follower_count":15,"angellist_url":"http://angel.co/bobbyrivera","image":"https://s3.amazonaws.com/photos.angel.co/users/51659-medium?1314075759"},{"name":"Arnon
+      Shafir","id":27597,"bio":"co-founder at give2gether, Product freak","follower_count":36,"angellist_url":"http://angel.co/arnon-shafir","image":"https://s3.amazonaws.com/photos.angel.co/users/27597-medium?1307775165"},{"name":"Tim
+      Haines","id":52827,"bio":"Founded Favstar.fm, bootstrapped it to profitability
+      and 40m+ monthly page views.","follower_count":33,"angellist_url":"http://angel.co/tim-haines","image":"https://s3.amazonaws.com/photos.angel.co/users/52827-medium?1314036922"},{"name":"Sean
+      Anderson","id":8704,"bio":"Ad Communities founder. Database / search architect.
+      Expert sailor and dorado / yellowtail fisherman.","follower_count":21,"angellist_url":"http://angel.co/sean-anderson","image":"https://s3.amazonaws.com/photos.angel.co/users/8704-medium?1313501640"},{"name":"Jonah
+      Lupton","id":37218,"bio":"Founder @ InterCapitalGroup, ParabolicVentures, EndeavorCard,
+      CharityAlly, CharityDateAuctions, ScholarsCard, FraudCollect, InternGenie, InspiredFutures\n","follower_count":940,"angellist_url":"http://angel.co/jonahlupton","image":"https://s3.amazonaws.com/photos.angel.co/users/37218-medium?1314508464"},{"name":"Nick
+      Huhn","id":6425,"bio":"ecommerce & digital marketing pioneer: Papa John''s,
+      Yum! Brands, First Data","follower_count":38,"angellist_url":"http://angel.co/nickhuhn","image":"https://s3.amazonaws.com/photos.angel.co/users/6425-medium?1304007246"},{"name":"Ismail
+      Atiev","id":40423,"bio":"award winning, musician, photographer, filmmaker, creative
+      director at www.setnight.com","follower_count":56,"angellist_url":"http://angel.co/ismailatiev","image":"https://s3.amazonaws.com/photos.angel.co/users/40423-medium?1313378509"},{"name":"Pete
+      Wassell","id":6022,"bio":"Startup Entrepreneur, Chief Dream Weaver, Visionary,
+      Imagineer, and Futurist.  The revolution will be augmented!","follower_count":27,"angellist_url":"http://angel.co/pete-wassell","image":"https://s3.amazonaws.com/photos.angel.co/users/6022-medium?1297103175"},{"name":"Israel
+      Chavez","id":49839,"bio":"Owner, Loyalynx and Tequila Blue Bay and I''ve an
+      idea for a software to change web activity for consumer products.\nIs time to
+      be rewarded.","follower_count":6,"angellist_url":"http://angel.co/israel-chavez","image":"https://s3.amazonaws.com/photos.angel.co/users/49839-medium?1313067257"},{"name":"Eric
+      Su","id":3112,"bio":"Web and game designer now building a life sharing social
+      network.","follower_count":25,"angellist_url":"http://angel.co/ericzoo","image":"https://s3.amazonaws.com/photos.angel.co/users/3112-medium?1302723507"},{"name":"Sylvain
+      Carle","id":23411,"bio":"CTO & co-founder of Needium (formerly Praized) http://needium.com
+      - I''m an internet, opensource, media & geo/local geek. Needium is my 4th startup.","follower_count":86,"angellist_url":"http://angel.co/sylvaincarle","image":"https://s3.amazonaws.com/photos.angel.co/users/23411-medium?1305312517"},{"name":"\u725f\u5fd7\u575a","id":22609,"bio":"\u4f01\u4e1a\u5fae\u535a\u67a2\u7ebd\u7f51\u521b\u59cb\u4eba,\u5fae\u535a\u505a\u5565\u7f51Zuosa\u521b\u59cb\u4eba
+      ","follower_count":0,"angellist_url":"http://angel.co/aleksoft","image":"https://s3.amazonaws.com/photos.angel.co/users/22609-medium?1301290831"},{"name":"Nathan
+      Roth","id":8697,"bio":"Co-Founder of Badger Media Inc, Mobile Transit System,
+      Keybo Mobile Search.  Social anthropologist turned social entrepreneur/technologist.
+      ","follower_count":224,"angellist_url":"http://angel.co/nathan-roth","image":"https://s3.amazonaws.com/photos.angel.co/users/8697-medium?1298319941"},{"name":"Mark
+      Laymon","id":24708,"bio":"Visionary, Community Builder, Internet Business Developer,
+      SEO, and Social Media Maven","follower_count":157,"angellist_url":"http://angel.co/mark-laymon","image":"https://s3.amazonaws.com/photos.angel.co/users/24708-medium?1301938602"},{"name":"Matteo
+      La Rosa","id":34318,"bio":"Koinema President and Konkuri inventor. Greedy for
+      studying new perspective on the digital world and completely passionate about
+      the web and its developing.","follower_count":4,"angellist_url":"http://angel.co/matteo-la-rosa","image":"https://s3.amazonaws.com/photos.angel.co/users/34318-medium?1306250034"},{"name":"Mehdi
+      Djabri","id":31993,"bio":"Entrepreneur, Soccer enthusiast, Co-founder of Jogabo.
+      Trying to change the way we play soccer.","follower_count":14,"angellist_url":"http://angel.co/mehdi-djabri","image":"https://s3.amazonaws.com/photos.angel.co/users/31993-medium?1311595842"},{"name":"Dave
+      McClure","id":144,"bio":"Founding Partner & TroubleMaker @ 500 Startups. also:
+      geek, entrepreneur, marketer, startup fanboy, internet addict, media whore,
+      former PayPal & Mint henchman.","follower_count":6086,"angellist_url":"http://angel.co/davemcclure","image":"https://s3.amazonaws.com/photos.angel.co/users/144-medium?1294803547"},{"name":"Andrew
+      Cove","id":46998,"bio":"Venture Hacker at AngelList. Previously intern at IA
+      Ventures. Founder of Quirk. PS3 R&D at Naughty Dog. CMU CS BS and MS.","follower_count":160,"angellist_url":"http://angel.co/aac","image":"https://s3.amazonaws.com/photos.angel.co/users/46998-medium?1312347474"},{"name":"Gary
+      Baker","id":3447,"bio":"Founder Griddeo/Clipblast Inc, Catalog Site (sold to
+      Fingerhut). Founding member IBM Interactive. ","follower_count":103,"angellist_url":"http://angel.co/griddeo1","image":"https://s3.amazonaws.com/photos.angel.co/users/3447-medium?1294804341"},{"name":"Jim
+      Murphy","id":10869,"bio":"Partner at ArtBarn","follower_count":59,"angellist_url":"http://angel.co/jim-murphy","image":"https://s3.amazonaws.com/photos.angel.co/users/10869-medium?1306594701"},{"name":"Gabriel
+      Martin","id":18639,"bio":"Hustler/Evangelist and Co-Founder of Organism, Scrappy
+      survivor, Street Borne Hustle, volunteer for entrepreneurs in Boston and now
+      through AngelList!","follower_count":496,"angellist_url":"http://angel.co/gabriel","image":"https://s3.amazonaws.com/photos.angel.co/users/18639-medium?1300269367"},{"name":"Nick
+      Frost","id":9260,"bio":"Founder StartupLi.st, Chief Hustler at Swaydar, Military
+      Veteran, Organizer of IdeaKick LA, Mentor at Startup Weekend.","follower_count":458,"angellist_url":"http://angel.co/nickfrost","image":"https://s3.amazonaws.com/photos.angel.co/users/9260-medium?1312963257"},{"name":"Jim
+      Markunas","id":35004,"bio":"Founding CEO of ZEVO. Also handled business/legal
+      affairs for The Walt Disney Company, digital distribution for Warner Bros.,
+      and founded CWG Magazine. ","follower_count":363,"angellist_url":"http://angel.co/jim-markunas","image":"https://s3.amazonaws.com/photos.angel.co/users/35004-medium?1306616977"},{"name":"Vivek
+      Ravisankar","id":30153,"bio":"Ex-Amazonian, Founded, interviewstreet.com","follower_count":18,"angellist_url":"http://angel.co/vivek-ravisankar","image":"https://s3.amazonaws.com/photos.angel.co/users/30153-medium?1310514044"},{"name":"Sean
+      Weinberg","id":2244,"bio":"Founded RezScore in 2010 (profitable, users, press
+      from day 1). Founded Freedom Resumes in 2009 (profitable w/in first month).
+      Sales at AC Lion (top biller).","follower_count":36,"angellist_url":"http://angel.co/sean-weinberg","image":"https://s3.amazonaws.com/photos.angel.co/users/2244-medium?1311085797"},{"name":"Raj
+      Mohan","id":40030,"bio":"25 years as entrepreneur, dreamer.\nFounder SME Bazar.\nFounder
+      India Databases - 1billionindians.com\nFounder Calcutta Yellow Pages.","follower_count":57,"angellist_url":"http://angel.co/raj-mohan-1","image":"https://s3.amazonaws.com/photos.angel.co/users/40030-medium?1309330444"},{"name":"Timothy
+      Anyasi","id":22817,"bio":"CEO/Co-founder slowhour.com, accountant, serial starter","follower_count":9,"angellist_url":"http://angel.co/slowhour-1","image":"https://s3.amazonaws.com/photos.angel.co/users/22817-medium?1309366663"},{"name":"Nir
+      Levy","id":38547,"bio":"Current BBA student at Emory University. Xerox Award
+      winner for innovation in information technology.","follower_count":18,"angellist_url":"http://angel.co/nirlevy","image":"https://s3.amazonaws.com/photos.angel.co/users/38547-medium?1308683296"},{"name":"Jim
+      Young","id":81,"bio":"Founder HotOrNot; I/O Ventures","follower_count":380,"angellist_url":"http://angel.co/jimydotorg","image":"https://s3.amazonaws.com/photos.angel.co/users/81-medium?1294803500"},{"name":"Amund
+      Tveit","id":6622,"bio":"co-founder of Atbrox, ex-googler (launched Google News
+      for iPhone), PhD Computer Science (machine learning)","follower_count":36,"angellist_url":"http://angel.co/atveit","image":"https://s3.amazonaws.com/photos.angel.co/users/6622-medium?1305656120"},{"name":"Dave
+      Zohrob","id":39961,"bio":"Venture Hacker. Previously, iOS / web hacker at Megatasty,
+      Soy Division, HOTorNOT.com, and Microsoft. BS CS UMich. ","follower_count":20,"angellist_url":"http://angel.co/dave","image":"https://s3.amazonaws.com/photos.angel.co/users/39961-medium?1309222356"},{"name":"Shannon
+      Snider","id":37064,"bio":"Founder Simplemarks.  Founder Cardina Internet (sold).
+      Senior Software Developer. Physicist & Astrophysicist.","follower_count":21,"angellist_url":"http://angel.co/shannon-snider","image":"https://s3.amazonaws.com/photos.angel.co/users/37064-medium?1307719757"},{"name":"Farooq
+      Yousuf","id":25413,"bio":"Co-Founder of Snack&Munch - Netflix for snacks (minus
+      returns)","follower_count":211,"angellist_url":"http://angel.co/farooq-yousuf","image":"https://s3.amazonaws.com/photos.angel.co/users/25413-medium?1309545907"},{"name":"Bryan
+      Barton","id":39584,"bio":"Founder of DonorTube","follower_count":23,"angellist_url":"http://angel.co/bryan-barton","image":"https://s3.amazonaws.com/photos.angel.co/users/39584-medium?1308990294"},{"name":"Navin
+      Kumar","id":11735,"bio":"Founder and Geek. Former CTO of @socialwok, now Venture
+      Hacker.","follower_count":52,"angellist_url":"http://angel.co/navin","image":"https://s3.amazonaws.com/photos.angel.co/users/11735-medium?1311810674"},{"name":"Stefano
+      Bernardi","id":12096,"bio":"Hacker, SaveMyInbox.com. Angel, Iubenda.com. Advisor,
+      Coderloop.com. Dave McClure''s Shadow, 500startups.","follower_count":398,"angellist_url":"http://angel.co/stefano-bernardi","image":"https://s3.amazonaws.com/photos.angel.co/users/12096-medium?1299016839"},{"name":"Eric
+      Wan","id":40515,"bio":"Co-founder at Ledova","follower_count":18,"angellist_url":"http://angel.co/eric-ctwan","image":"https://s3.amazonaws.com/photos.angel.co/users/40515-medium?1314495972"},{"name":"Kirk
+      Ouimet","id":39564,"bio":"I love the web. I''ve created a bunch of sites that
+      are raking in around 600,000 uniques a month.","follower_count":19,"angellist_url":"http://angel.co/kirk-ouimet","image":"https://s3.amazonaws.com/photos.angel.co/users/39564-medium?1308964834"},{"name":"Omar
+      Tellez","id":33462,"bio":"Best 2006 SW IPO /Top 5 global SaaS/Induced into S&P600
+      @ Synchronoss; Founder MAAWG (AntiAbuse/Spam) ; Booz Allen; Berkeley - University
+      of California\n","follower_count":51,"angellist_url":"http://angel.co/ohtellez","image":"https://s3.amazonaws.com/photos.angel.co/users/33462-medium?1308613115"},{"name":"Nicolas
+      Cazagou","id":34965,"bio":"Founder of EgoBook : Get your Facebook wall printed
+      in a book !","follower_count":8,"angellist_url":"http://angel.co/nicolas-cazagou","image":"https://s3.amazonaws.com/photos.angel.co/users/34965-medium?1306571242"},{"name":"Phillip
+      Herrejon","id":33793,"bio":"French Press coffee loving R.E. Investor turned
+      Tech Startup Pro/Non-Profit Advocate/Social Entrepreneur. LIFE LESSONS: Fail
+      fast, live humbly, pay it forward.","follower_count":1265,"angellist_url":"http://angel.co/phillip-herrejon","image":"https://s3.amazonaws.com/photos.angel.co/users/33793-medium?1310706275"},{"name":"Liad
+      Agmon","id":21549,"bio":null,"follower_count":65,"angellist_url":"http://angel.co/liadagmon","image":"https://s3.amazonaws.com/photos.angel.co/users/21549-medium?1300991860"},{"name":"Adam
+      DesAutels","id":21428,"bio":"Founder of Moably (role: the hustler)","follower_count":24,"angellist_url":"http://angel.co/adam-desautels","image":"https://s3.amazonaws.com/photos.angel.co/users/21428-medium?1300985388"},{"name":"Chris
+      Cox","id":22290,"bio":"I am the founder LessonTrack (lessontrack.net).","follower_count":15,"angellist_url":"http://angel.co/chris-cox","image":"https://s3.amazonaws.com/photos.angel.co/users/22290-medium?1303887302"},{"name":"Nicholas
+      Kampe","id":25921,"bio":"Founder & CEO of ListenerApproved.com, The Sound of
+      Eternal Revolution. Information Technologist & Computer Scientist.","follower_count":101,"angellist_url":"http://angel.co/kampe","image":"https://s3.amazonaws.com/photos.angel.co/users/25921-medium?1302741320"},{"name":"Daniel
+      Brusilovsky","id":4516,"bio":"18 year-old entrepreneur. Founder & CEO of Teens
+      in Tech Labs. Evangelist, Silicon Valley at JESS3. Advisor at Everyme.","follower_count":543,"angellist_url":"http://angel.co/danielbru","image":"https://s3.amazonaws.com/photos.angel.co/users/4516-medium?1294850641"}],"total":65,"per_page":50,"page":1,"last_page":2}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/users/671
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Thu, 15 Sep 2011 04:23:24 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '914'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '46'
+      etag:
+      - ! '"240b2c2e167ed6f207a6dc6bfd887452"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '693'
+    body: ! '{"name":"Joshua Slayton","id":671,"bio":"Hacker at AngelList, early at
+      Super Rewards (Adknowledge), HOTorNOT mafia","follower_count":65,"angellist_url":"http://angel.co/joshuaxls","image":"https://s3.amazonaws.com/photos.angel.co/users/671-medium?1307417320","blog_url":"","online_bio_url":"","twitter_url":"http://twitter.com/#!/joshuaxls","facebook_url":"http://www.facebook.com/joshy","linkedin_url":"","locations":[{"id":1692,"tag_type":"LocationTag","name":"san
+      francisco","display_name":"San Francisco","angellist_url":"http://angel.co/san-francisco"}],"roles":[{"id":14726,"tag_type":"RoleTag","name":"developer","display_name":"Developer","angellist_url":"http://angel.co/developer"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/users/671/followers/ids
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Thu, 15 Sep 2011 04:23:24 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '913'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '30'
+      etag:
+      - ! '"f4bc02ba6257f8d14435f81f3d36f144"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '412'
+    body: ! '{"ids":[57831,9861,34987,17463,51659,27597,52827,8704,37218,6425,40423,6022,49839,3112,23411,22609,8697,24708,34318,31993,144,46998,3447,10869,18639,9260,35004,30153,2244,40030,22817,38547,81,6622,39961,37064,25413,39584,11735,12096,40515,39564,33462,34965,33793,21549,21428,22290,25921,4516,1941,17764,8797,276,18631,14641,6563,1925,18241,2,155,713,1,903,1646],"total":65,"per_page":1000,"page":1,"last_page":1}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/users/671/following/ids
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sat, 17 Sep 2011 21:36:11 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '999'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '38'
+      etag:
+      - ! '"285558afbf7a00ee7f1fcf4f39f2884f"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '281'
+    body: ! '{"ids":[57308,51265,9861,144,46998,64,44500,43323,6622,140,8797,39961,40515,19986,27991,28545,219,155,498,11354,339,290,9712,17295,108,9826,18241,713,1,17286,11735,1941,2,151,19188,88,81,5196,4848,77,1925,111,139,1733,743,903,137],"total":47,"per_page":1000,"page":1,"last_page":1}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/users/671/following
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sat, 17 Sep 2011 21:51:23 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '998'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '619'
+      etag:
+      - ! '"c51d0abc66ed098fb09fa410c857b85f"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '12584'
+    body: ! '{"users":[{"name":"Jonathan LeBlanc","id":57308,"bio":"Principal Developer
+      Evangelist with X.com, O''Reilly author, open source contributor.","follower_count":1,"angellist_url":"http://angel.co/jcleblanc","image":"https://s3.amazonaws.com/photos.angel.co/users/57308-medium?1315875561"},{"name":"Steve
+      Case","id":51265,"bio":"Co-founder of AOL; now Chairman of Case Foundation and
+      Revolution (Zipcar, LivingSocial, Exclusive Resorts, Everyday Health, Revolution
+      Money, Miraval, etc)","follower_count":159,"angellist_url":"http://angel.co/stevecase","image":"https://s3.amazonaws.com/photos.angel.co/users/51265-medium?1313524044"},{"name":"Jason
+      A. Hoffman","id":9861,"bio":"Founded Joyent. I specialize in talent and revenue
+      generation and all activities required to support it.","follower_count":924,"angellist_url":"http://angel.co/jason-a-hoffman","image":"https://s3.amazonaws.com/photos.angel.co/users/9861-medium?1307870800"},{"name":"Dave
+      McClure","id":144,"bio":"Founding Partner & TroubleMaker @ 500 Startups. also:
+      geek, entrepreneur, marketer, startup fanboy, internet addict, media whore,
+      former PayPal & Mint henchman.","follower_count":6209,"angellist_url":"http://angel.co/davemcclure","image":"https://s3.amazonaws.com/photos.angel.co/users/144-medium?1294803547"},{"name":"Andrew
+      Cove","id":46998,"bio":"Venture Hacker at AngelList. Previously intern at IA
+      Ventures. Founder of Quirk. PS3 R&D at Naughty Dog. CMU CS BS and MS.","follower_count":180,"angellist_url":"http://angel.co/aac","image":"https://s3.amazonaws.com/photos.angel.co/users/46998-medium?1312347474"},{"name":"Jonathan
+      Abrams","id":64,"bio":"Co-founder of Founders Den, co-owner of Slide nightclub,
+      former founder & CEO of Socializr, Friendster, and HotLinks.","follower_count":1368,"angellist_url":"http://angel.co/abrams","image":"https://s3.amazonaws.com/photos.angel.co/users/64-medium?1294803487"},{"name":"Matt
+      Cutts","id":44500,"bio":"I''m the head of the webspam team at Google.","follower_count":430,"angellist_url":"http://angel.co/matt-cutts","image":"https://s3.amazonaws.com/photos.angel.co/users/44500-medium?1311396305"},{"name":"Guy
+      Kawasaki","id":43323,"bio":"","follower_count":142,"angellist_url":"http://angel.co/guy-kawasaki","image":"https://s3.amazonaws.com/photos.angel.co/users/43323-medium?1311016389"},{"name":"Amund
+      Tveit","id":6622,"bio":"co-founder of Atbrox, ex-googler (launched Google News
+      for iPhone), PhD Computer Science (machine learning)","follower_count":37,"angellist_url":"http://angel.co/atveit","image":"https://s3.amazonaws.com/photos.angel.co/users/6622-medium?1305656120"},{"name":"Keith
+      Rabois","id":140,"bio":"Former Executive at PayPal, LinkedIn and Slide.  Current
+      Executive at Square ","follower_count":2382,"angellist_url":"http://angel.co/rabois","image":"https://s3.amazonaws.com/photos.angel.co/users/140-medium?1301362934"},{"name":"Hackers
+      And Founders","id":8797,"bio":"The Port of entry to Silicon Valley for startups
+      and alpha geeks. \n\nThe Co-op --> The Linux of Incubators.","follower_count":950,"angellist_url":"http://angel.co/hackers_and_founders","image":"https://s3.amazonaws.com/photos.angel.co/users/8797-medium?1299000245"},{"name":"Dave
+      Zohrob","id":39961,"bio":"Venture Hacker. Previously, iOS / web hacker at Megatasty,
+      Soy Division, HOTorNOT.com, and Microsoft. BS CS UMich. ","follower_count":20,"angellist_url":"http://angel.co/dave","image":"https://s3.amazonaws.com/photos.angel.co/users/39961-medium?1309222356"},{"name":"Eric
+      Wan","id":40515,"bio":"Co-founder at Ledova","follower_count":20,"angellist_url":"http://angel.co/eric-ctwan","image":"https://s3.amazonaws.com/photos.angel.co/users/40515-medium?1314495972"},{"name":"Obie
+      Fernandez","id":19986,"bio":"Entrepreneur, Blogger, Founder/CEO of Hashrocket
+      (sold); Author of \"The Rails Way\"; 15+ years professional software development
+      experience","follower_count":127,"angellist_url":"http://angel.co/obie","image":"https://s3.amazonaws.com/photos.angel.co/users/19986-medium?1303097912"},{"name":"Kai
+      Huang","id":27991,"bio":"Co-founder of Red Octane, creators of Guitar Hero,
+      and sold to Activision.","follower_count":135,"angellist_url":"http://angel.co/kai-huang","image":"https://s3.amazonaws.com/photos.angel.co/users/27991-medium?1303773985"},{"name":"David
+      Ulevitch","id":28545,"bio":"Started OpenDNS. Started and sold EveryDNS. Positively
+      Disruptive. ","follower_count":226,"angellist_url":"http://angel.co/davidu","image":"https://s3.amazonaws.com/photos.angel.co/users/28545-medium?1303670108"},{"name":"Tim
+      Ferriss","id":219,"bio":"Author of #1 NY Times bestseller, The 4-Hour Workweek,
+      Japanophile, tea drinker, tango world record holder, language learning fanatic.","follower_count":1046,"angellist_url":"http://angel.co/tim-ferriss","image":"https://s3.amazonaws.com/photos.angel.co/users/219-medium?1294803590"},{"name":"Naval
+      Ravikant","id":155,"bio":"Sweat - AngelList, Venture Hacks, Vast, Epinions;
+      Money - Twitter, Heyzap, SnapLogic","follower_count":14374,"angellist_url":"http://angel.co/naval","image":"https://s3.amazonaws.com/photos.angel.co/users/155-medium?1308634544"},{"name":"Kevin
+      Rose","id":498,"bio":"Co-Founder / CEO at Milk Inc.; Board Member and Founder
+      at Digg Inc.; Board Member and Co-Founder at Revision3","follower_count":1843,"angellist_url":"http://angel.co/kevin","image":"https://s3.amazonaws.com/photos.angel.co/users/498-medium?1294803689"},{"name":"Jimmy
+      Wales","id":11354,"bio":"Founder, Wikipedia and Wikia","follower_count":557,"angellist_url":"http://angel.co/jimmywales","image":"https://s3.amazonaws.com/photos.angel.co/users/11354-medium?1298901468"},{"name":"Dave
+      Morin","id":339,"bio":"Entrepreneur. Investor. Skier.","follower_count":2558,"angellist_url":"http://angel.co/davemorin","image":"https://s3.amazonaws.com/photos.angel.co/users/339-medium?1294803629"},{"name":"Max
+      Levchin","id":290,"bio":"VP of Engineering at Google; Founder & CEO at Slide,
+      Inc; Co-founder and Chief Technology Officer at PayPal","follower_count":1781,"angellist_url":"http://angel.co/mlevchin","image":"https://s3.amazonaws.com/photos.angel.co/users/290-medium?1294803610"},{"name":"Evan
+      Williams","id":9712,"bio":"@ev Farm boy from Nebraska. Co-founder of Twitter.
+      http://evhead.com","follower_count":810,"angellist_url":"http://angel.co/ev","image":"https://s3.amazonaws.com/photos.angel.co/users/9712-medium?1298669671"},{"name":"Stephen
+      Wolfram","id":17295,"bio":"Creator of Mathematica, the author of A New Kind
+      of Science, the creator of Wolfram|Alpha, and the founder and CEO of Wolfram
+      Research.","follower_count":170,"angellist_url":"http://angel.co/stephen-wolfram","image":"https://s3.amazonaws.com/photos.angel.co/users/17295-medium?1305150131"},{"name":"Joshua
+      Schachter","id":108,"bio":"CEO at Tasty Labs; Member of Technical Staff at Google;
+      Director Engineering del.icio.us at Yahoo; founder at del.icio.us","follower_count":802,"angellist_url":"http://angel.co/joshu","image":"https://s3.amazonaws.com/photos.angel.co/users/108-medium?1294803521"},{"name":"Mark
+      Zuckerberg","id":9826,"bio":"Founder of Facebook.","follower_count":833,"angellist_url":"http://angel.co/zuck","image":"https://s3.amazonaws.com/photos.angel.co/users/9826-medium?1298686403"},{"name":"Andy
+      Kuo","id":18241,"bio":"CS and HCI from Stanford. Early at ChoiceVendor (LinkedIn).","follower_count":30,"angellist_url":"http://angel.co/andy-kuo","image":"https://s3.amazonaws.com/photos.angel.co/users/18241-medium?1306955394"},{"name":"Miche
+      Capone","id":713,"bio":null,"follower_count":52,"angellist_url":"http://angel.co/capone","image":"https://s3.amazonaws.com/photos.angel.co/users/713-medium?1294803747"},{"name":"Brandon
+      Leonardo","id":1,"bio":"Early AngelList engineer. Hack of all trades, master
+      of awesome.","follower_count":100,"angellist_url":"http://angel.co/brandon","image":"https://s3.amazonaws.com/photos.angel.co/users/1-medium?1294803443"},{"name":"J.
+      Bryan Scott","id":17286,"bio":null,"follower_count":33,"angellist_url":"http://angel.co/jbryanscott-1","image":"https://s3.amazonaws.com/photos.angel.co/users/17286-medium?1299810170"},{"name":"Navin
+      Kumar","id":11735,"bio":"Founder and Geek. Former CTO of @socialwok, now Venture
+      Hacker.","follower_count":52,"angellist_url":"http://angel.co/navin","image":"https://s3.amazonaws.com/photos.angel.co/users/11735-medium?1311810674"},{"name":"Milos
+      Tatarevic","id":1941,"bio":"Chief Scientist / CTO at Vast.com, Chainn, Now.co","follower_count":29,"angellist_url":"http://angel.co/milos","image":"https://s3.amazonaws.com/photos.angel.co/users/1941-medium?1306894182"},{"name":"Babak
+      Nivi","id":2,"bio":"Co-founder of AngelList and Venture Hacks \u2022 EIR at
+      Atlas and Bessemer \u2022 Worked on Songbird, Grockit and Kovio \u2022 Schooling
+      at MIT \u2022 Published in Science","follower_count":3416,"angellist_url":"http://angel.co/nivi","image":"https://s3.amazonaws.com/photos.angel.co/users/2-medium?1307554953"},{"name":"Jeff
+      Fagnan","id":151,"bio":"GP at Atlas Venture; early friend of AngelList; founder
+      of TUGG; advocate of uncertainty...","follower_count":752,"angellist_url":"http://angel.co/jfagnan","image":"https://s3.amazonaws.com/photos.angel.co/users/151-medium?1298137937"},{"name":"Reid
+      Hoffman","id":19188,"bio":"Entrepreneur. Product Strategist. Investor.","follower_count":3815,"angellist_url":"http://angel.co/reid-hoffman","image":"https://s3.amazonaws.com/photos.angel.co/users/19188-medium?1300486672"},{"name":"Gabriel
+      Weinberg","id":88,"bio":"Founded DuckDuckGo. Co-founded NamesDatabase (sold
+      to UNTD). B.S. & M.S. from MIT (Physics, Technology Policy). Angel investor.
+      Hacker. Dad.","follower_count":759,"angellist_url":"http://angel.co/yegg","image":"https://s3.amazonaws.com/photos.angel.co/users/88-medium?1298561670"},{"name":"Jim
+      Young","id":81,"bio":"Founder HotOrNot; I/O Ventures","follower_count":383,"angellist_url":"http://angel.co/jimydotorg","image":"https://s3.amazonaws.com/photos.angel.co/users/81-medium?1294803500"},{"name":"Steve
+      Blank","id":5196,"bio":"Customer Development & Secret History, Teaching at Stanford,
+      Berkeley and Columbia\r\nhttp://www.steveblank.com","follower_count":641,"angellist_url":"http://angel.co/sgblank","image":"https://s3.amazonaws.com/photos.angel.co/users/5196-medium?1295998374"},{"name":"J.
+      Bryan Scott","id":4848,"bio":"","follower_count":36,"angellist_url":"http://angel.co/jbs","image":"https://s3.amazonaws.com/photos.angel.co/users/4848-medium?1306129269"},{"name":"Mitch
+      Kapor","id":77,"bio":"Founder of Lotus Software, founding investor in UUNET,
+      co-founder of EFF, founding investor in Real Networks, founding Chair of Mozilla
+      Foundation.","follower_count":2938,"angellist_url":"http://angel.co/mkapor","image":"https://s3.amazonaws.com/photos.angel.co/users/77-medium?1294803497"},{"name":"Graham
+      Jenkin","id":1925,"bio":"Venture Hacker @ AngelList. Ex-Google head of UX for
+      Ads and Commerce. Ex-BofA head of UX.","follower_count":522,"angellist_url":"http://angel.co/graham","image":"https://s3.amazonaws.com/photos.angel.co/users/1925-medium?1294804016"},{"name":"Thomas
+      Korte","id":111,"bio":"Founder of AngelPad, Ex-Google Product Manager, Startup
+      Advisor, Angel Investor","follower_count":1485,"angellist_url":"http://angel.co/thomask","image":"https://s3.amazonaws.com/photos.angel.co/users/111-medium?1312088874"},{"name":"Mark
+      Suster","id":139,"bio":"General partner, GRP Ventures & 2x entrepreneur. Sold
+      Koral to Salesforce.com","follower_count":2803,"angellist_url":"http://angel.co/msuster","image":"https://s3.amazonaws.com/photos.angel.co/users/139-medium?1294803543"},{"name":"J.
+      Bryan Scott","id":1733,"bio":"","follower_count":48,"angellist_url":"http://angel.co/jbryanscott","image":"https://s3.amazonaws.com/photos.angel.co/users/1733-medium?1313200204"},{"name":"Fred
+      Wilson","id":743,"bio":"Managing partner at Union Square Ventures and also founded
+      Flatiron Partners.","follower_count":2796,"angellist_url":"http://angel.co/fredwilson","image":"https://s3.amazonaws.com/photos.angel.co/users/743-medium?1294803766"},{"name":"Jason
+      Bailey","id":903,"bio":"Founder Super Rewards, acquired by AdKnowledge","follower_count":318,"angellist_url":"http://angel.co/superrewardsceo","image":"https://s3.amazonaws.com/photos.angel.co/users/903-medium?1294803801"},{"name":"Peter
+      Chane","id":137,"bio":"Director of Partnerships and Business Development at
+      Google Chrome OS","follower_count":724,"angellist_url":"http://angel.co/peterchane","image":"https://s3.amazonaws.com/photos.angel.co/users/137-medium?1294803542"}],"total":47,"per_page":50,"page":1,"last_page":1}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/reviews
+    body: !!null 
+    headers:
+      user_id:
+      - '671'
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 500
+      message: Internal Server Error
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sat, 17 Sep 2011 23:00:06 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '500'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      cache-control:
+      - no-cache
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '999'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '714'
+      content-length:
+      - '83'
+    body: ! '{"success":false,"error":{"type":"unknown","message":"An unknown error
+      occurred."}}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/users/155
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sat, 17 Sep 2011 23:09:28 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '997'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '53'
+      etag:
+      - ! '"1f8fd565d27493c584875cb0a9e11a7a"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '916'
+    body: ! '{"name":"Naval Ravikant","id":155,"bio":"Sweat - AngelList, Venture Hacks,
+      Vast, Epinions; Money - Twitter, Heyzap, SnapLogic","follower_count":14374,"angellist_url":"http://angel.co/naval","image":"https://s3.amazonaws.com/photos.angel.co/users/155-medium?1308634544","blog_url":"http://startupboy.com/","online_bio_url":"http://startupboy.com/about/","twitter_url":"http://twitter.com/naval","facebook_url":"http://www.facebook.com/navalr","linkedin_url":"http://www.linkedin.com/in/navalr","locations":[{"id":1692,"tag_type":"LocationTag","name":"san
+      francisco","display_name":"San Francisco","angellist_url":"http://angel.co/san-francisco"}],"roles":[{"id":9305,"tag_type":"RoleTag","name":"seed
+      funds","display_name":"Seed Fund","angellist_url":"http://angel.co/seed-funds"},{"id":14725,"tag_type":"RoleTag","name":"entrepreneur","display_name":"Entrepreneur","angellist_url":"http://angel.co/entrepreneur-1"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/reviews?user_id=155
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sat, 17 Sep 2011 23:11:04 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '995'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '138'
+      etag:
+      - ! '"7ee9c2764ead69123b0d4195f81bcbba"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '1128'
+    body: ! '{"reviews":[{"id":217,"rating":1,"created_at":"2011-07-06T20:18:05Z","note":"Probably
+      the best advisor/investor we had -- I always recommend Naval''s investment as
+      the friendliest money in the valley. ","relationship_to_reviewer":"investor"},{"id":404,"rating":1,"created_at":"2011-07-25T22:23:41Z","note":"Very
+      entrepreneur friendly.  Super sharp.","relationship_to_reviewer":"investor"},{"id":517,"rating":1,"created_at":"2011-07-25T22:45:06Z","note":"Because
+      he''s the fucking man.","relationship_to_reviewer":"investor"},{"id":1070,"rating":1,"created_at":"2011-08-10T02:21:09Z","note":"Naval
+      is the most founder focused investor/ advisor I know. He does anything to help
+      startup founders and he is awesome at it! His blog http://venturehacks.com is
+      one of the best startup resources available. ","relationship_to_reviewer":"co_investor"},{"id":1098,"rating":1,"created_at":"2011-08-12T02:49:30Z","note":"Naval
+      is hard working, honest and he really cares. Every founder I''ve sent to him
+      has had a great experience! ","relationship_to_reviewer":"co_investor"}],"total_positive":5,"total":5,"per_page":50,"page":1,"last_page":1}'
+    http_version: '1.1'

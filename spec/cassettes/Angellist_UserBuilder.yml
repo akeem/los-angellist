@@ -1,0 +1,160 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/users/155
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Thu, 15 Sep 2011 04:06:51 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '999'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '51'
+      etag:
+      - ! '"6b5d27b508136ef685a397f78ce08c23"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '916'
+    body: ! '{"name":"Naval Ravikant","id":155,"bio":"Sweat - AngelList, Venture Hacks,
+      Vast, Epinions; Money - Twitter, Heyzap, SnapLogic","follower_count":14331,"angellist_url":"http://angel.co/naval","image":"https://s3.amazonaws.com/photos.angel.co/users/155-medium?1308634544","blog_url":"http://startupboy.com/","online_bio_url":"http://startupboy.com/about/","twitter_url":"http://twitter.com/naval","facebook_url":"http://www.facebook.com/navalr","linkedin_url":"http://www.linkedin.com/in/navalr","locations":[{"id":1692,"tag_type":"LocationTag","name":"san
+      francisco","display_name":"San Francisco","angellist_url":"http://angel.co/san-francisco"}],"roles":[{"id":9305,"tag_type":"RoleTag","name":"seed
+      funds","display_name":"Seed Fund","angellist_url":"http://angel.co/seed-funds"},{"id":14725,"tag_type":"RoleTag","name":"entrepreneur","display_name":"Entrepreneur","angellist_url":"http://angel.co/entrepreneur-1"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/users/xxxxx
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 404
+      message: Not Found
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Thu, 15 Sep 2011 04:06:51 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '404'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      cache-control:
+      - no-cache
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '998'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '19'
+      content-length:
+      - '97'
+    body: ! '{"success":false,"error":{"type":"not_found","message":"The specified
+      item could not be found."}}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/users/search?slug=joshuaxls
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Thu, 15 Sep 2011 04:06:52 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '997'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '62'
+      etag:
+      - ! '"240b2c2e167ed6f207a6dc6bfd887452"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '693'
+    body: ! '{"name":"Joshua Slayton","id":671,"bio":"Hacker at AngelList, early at
+      Super Rewards (Adknowledge), HOTorNOT mafia","follower_count":65,"angellist_url":"http://angel.co/joshuaxls","image":"https://s3.amazonaws.com/photos.angel.co/users/671-medium?1307417320","blog_url":"","online_bio_url":"","twitter_url":"http://twitter.com/#!/joshuaxls","facebook_url":"http://www.facebook.com/joshy","linkedin_url":"","locations":[{"id":1692,"tag_type":"LocationTag","name":"san
+      francisco","display_name":"San Francisco","angellist_url":"http://angel.co/san-francisco"}],"roles":[{"id":14726,"tag_type":"RoleTag","name":"developer","display_name":"Developer","angellist_url":"http://angel.co/developer"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/users/search?slug=xxxxx
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 404
+      message: Not Found
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Thu, 15 Sep 2011 04:06:53 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '404'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      cache-control:
+      - no-cache
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '996'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '25'
+      content-length:
+      - '97'
+    body: ! '{"success":false,"error":{"type":"not_found","message":"The specified
+      item could not be found."}}'
+    http_version: '1.1'
