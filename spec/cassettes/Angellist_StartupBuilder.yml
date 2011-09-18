@@ -288,3 +288,90 @@
     body: ! '{"success":false,"error":{"type":"not_found","message":"The specified
       item could not be found."}}'
     http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/tags/1654/startups
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sun, 18 Sep 2011 23:23:42 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '999'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '1795'
+      etag:
+      - ! '"f272bfb2ac153ae4e9d0eeb194611018"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '5793'
+    body: ! '{"startups":[{"id":20662,"hidden":false,"name":"Oil Can Media","angellist_url":"http://angel.co/oil-can-media","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/20662-730f8d338f88470b6ed50507b7ec4f5a-medium.gif","product_desc":"Our
+      service allows authors, creators, rights holders, and startups to commercialize
+      their IP more effectively.  Our focus is on Media and Entertainment oriented
+      products and services.","follower_count":5,"company_url":"http://www.oilcanmedia.com"},{"id":20450,"hidden":false,"name":"Red
+      e App","angellist_url":"http://angel.co/red-e-app","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/20450-a05a6bbe0b0d7a1f52f0f7188ea3f9c0-medium.png","product_desc":"Red
+      e App is a Mobile Social Service Notification App and platform connecting business
+      to consumer via their mobile device.  The result is privacy for the consumer,
+      the information they want, when they want it and the ability to separate business
+      communication from personal communication. For the business it provides instant,
+      brief communication to the consumer, creating a new channel in which to communicate,
+      build loyalty, brand awareness and provide discounting and advertising. ","follower_count":9,"company_url":"http://www.redeapp.com"},{"id":18661,"hidden":false,"name":"Joymaps","angellist_url":"http://angel.co/joymaps","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/18661-39f80bbfd5aa1bf4cbc778a85b59c745-medium.jpg","product_desc":"Joymaps
+      helps a consumer do a \"micro-journal\" of \"moments or joy\" online or in person.
+      You can tag a URL, Photo or Video with a level of happiness.  You can then do
+      a geographic map, topic map or use other ways of mapping your joy. Over a period
+      of time you do this and you can see what makes you happy or unhappy!","follower_count":7,"company_url":"http://www.joymaps.com"},{"id":16327,"hidden":false,"name":"TrueID
+      Security","angellist_url":"http://angel.co/trueid-security","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/16327-9003c6d4162de52f634c9c278cec5fca-medium.JPG","product_desc":"TrueID
+      has developed Credential, a software-based biometric identity authentication
+      solution.Credential provides continuous authentication in a cost effective manner
+      by allowing users to leverage their existing computer and laptop components
+      without the need for costly hardware upgrades.With our proprietary keystroke
+      and facial recognition software, we continuously authenticate the identity of
+      users completing online programs allowing our clients to provide user authentication
+      at a cost effective price.Credential directly addresses the two greatest needs
+      of online coursework today: achieving greater user authentication and keeping
+      costs low.","follower_count":7,"company_url":"http://www.trueidonline.com"},{"id":14306,"hidden":false,"name":"Sound
+      Rush","angellist_url":"http://angel.co/sound-rush","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/14306-2e9ad970ed4ffbf0a743df0c0ce8108f-medium.png","product_desc":"Sound
+      Rush is a powerful tool for musicians to manage their schedule, setlist and
+      bands. Sound Rush also provides powerful features such as a generated, personal
+      mobile website with a custom QR code for marketing purposes.","follower_count":16,"company_url":"http://www.integralrd.com/"},{"id":13742,"hidden":true},{"id":9452,"hidden":false,"name":"Imperium
+      Health Management","angellist_url":"http://angel.co/imperium-health-management","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/9452-0695514d0ee77fce27ede2b6895db2f1-medium.jpg","product_desc":"Services
+      and technology to support Accountable Care Organizations on a turnkey, total
+      solution basis.\n\nHealthcare reimbursement is rapidly changing to \"value-based\"
+      purchasing where healthcare payors are expecting healthcare providers to organize
+      and take collective accountability for the cost and quality of care for a defined
+      patient population.  To be successful, these new organizations (called ACO''s)
+      need infrastructure, technology and expertise to \"manage care\".\n\nImperium
+      is the solution.","follower_count":4,"company_url":"http://www.imperiumhlth.com"},{"id":2904,"hidden":true},{"id":2890,"hidden":true},{"id":2885,"hidden":true},{"id":2528,"hidden":false,"name":"Conductrus","angellist_url":"http://angel.co/conductrus","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/2528-f98cca29151b505c886f57f3ff1ee588-medium.jpg","product_desc":"Scheduling
+      mobile workers isn''t easy.  Missing visits or sending the wrong technicians
+      costs money.  Communicating with customers is time-consuming.\n\nCondutrus ensures
+      that you send the right technician, to the right customer, every time, while
+      keeping your customer posted on your progress.  It''s easy, it''s intuitive,
+      and it pays for itself right away.\n\n\n\nWe''re Basecamp for service managers!\n\nTry
+      it yourself it. - https://accounts.conductr.us/signup/free","follower_count":7,"company_url":"http://Conductr.us"},{"id":2443,"hidden":false,"name":"Keepio","angellist_url":"http://angel.co/keepio","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/2443-78bd2de457c4d4bfcaf187aa22fb8ed8-medium.jpg","product_desc":"Keepio
+      invites collectors and enthusiasts to buy or sell items they want or own among
+      other trusted friends. Collectors and enthusiasts use Keepio to keep track of
+      their goods and interests, and then buy, sell or share their belongings within
+      public or private marketplaces. Keepio also offers a plug-in product for existing
+      forums and communities focused on discussion of products, collectibles, and
+      memorabilia.","follower_count":45,"company_url":"http://keepio.com"},{"id":2115,"hidden":true},{"id":1739,"hidden":true},{"id":11,"hidden":true}],"total":15,"per_page":50,"page":1,"last_page":1}'
+    http_version: '1.1'

@@ -42,5 +42,18 @@ module Angellist
       end
     end
 
+
+    def tagged(tag, options = {})
+      response = @connection.get "/1/tags/#{tag}/startups",options
+
+      startups = []
+
+      response.body["startups"].each{|startup|
+        startups << Angellist::Startup.new(startup)
+      }
+
+      startups
+    end
+
   end
 end

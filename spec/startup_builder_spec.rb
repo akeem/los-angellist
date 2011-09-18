@@ -51,5 +51,18 @@ describe Angellist::StartupBuilder do
 
   end
 
+  describe "#tagged" do
+   it "should return an Array" do
+     subject.tagged("1654").should be_a_kind_of Array
+   end
+
+   it "should contain matching Startups" do
+     subject.tagged("1654").each{|item|
+       item.should be_a_kind_of Angellist::Startup
+     }
+   end
+
+  end
+
 
 end
