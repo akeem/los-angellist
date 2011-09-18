@@ -1,0 +1,78 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/tags/1654
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sun, 18 Sep 2011 01:54:39 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '999'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '29'
+      etag:
+      - ! '"5acb9f5b429fafe6f0f2219947498355"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '293'
+    body: ! '{"id":1654,"tag_type":"LocationTag","name":"louisville","display_name":"Louisville","angellist_url":"http://angel.co/louisville","statistics":{"all":{"investor_followers":686,"followers":3405,"startups":15,"users":18},"direct":{"investor_followers":3,"followers":26,"startups":15,"users":18}}}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/tags/-555
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 404
+      message: Not Found
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sun, 18 Sep 2011 01:54:40 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '404'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      cache-control:
+      - no-cache
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '998'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '31'
+      content-length:
+      - '97'
+    body: ! '{"success":false,"error":{"type":"not_found","message":"The specified
+      item could not be found."}}'
+    http_version: '1.1'
