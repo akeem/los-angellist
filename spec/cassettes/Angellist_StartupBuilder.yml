@@ -1,0 +1,290 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/startups/6702
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sun, 18 Sep 2011 21:56:25 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '999'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '66'
+      etag:
+      - ! '"78f3404cc0cf84ff4527ba3a450d3dd2"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '1347'
+    body: ! '{"id":6702,"hidden":false,"name":"AngelList","angellist_url":"http://angel.co/angellist","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/6702-766d1ce00c99ce9a5cbc19d0c87a436e-medium.","product_desc":"AngelList
+      is an online community that helps startups find investors. And investors find
+      startups. Currently works across Series Seed, A, B, and C.","follower_count":354,"company_url":"http://angel.co","twitter_url":"http://twitter.com/angellist","blog_url":"http://blog.angel.co","video_url":"","markets":[{"id":448,"tag_type":"MarketTag","name":"startups","display_name":"Startups","angellist_url":"http://angel.co/startups-1"},{"id":856,"tag_type":"MarketTag","name":"venture
+      capital","display_name":"Venture Capital","angellist_url":"http://angel.co/venture-capital"}],"locations":[{"id":1692,"tag_type":"LocationTag","name":"san
+      francisco","display_name":"San Francisco","angellist_url":"http://angel.co/san-francisco"}],"status":{"id":18752,"message":"Hackers,
+      say hello to the AngelList API http://angel.co/api. Hack venture capital. Hack
+      startups.","created_at":"2011-09-14T20:56:09Z"},"screenshots":[{"thumb":"https://s3.amazonaws.com/screenshots.angel.co/98/6702/009cff275fb96709c915c4d4abc943d6-thumb.jpg","original":"https://s3.amazonaws.com/screenshots.angel.co/98/6702/009cff275fb96709c915c4d4abc943d6-original.jpg"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/startups/-111
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 404
+      message: Not Found
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sun, 18 Sep 2011 21:56:26 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '404'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      cache-control:
+      - no-cache
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '998'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '28'
+      content-length:
+      - '97'
+    body: ! '{"success":false,"error":{"type":"not_found","message":"The specified
+      item could not be found."}}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/startups/search
+    body: !!null 
+    headers:
+      slug:
+      - angellist
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 500
+      message: Internal Server Error
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sun, 18 Sep 2011 22:11:29 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '500'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      cache-control:
+      - no-cache
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '999'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '642'
+      content-length:
+      - '83'
+    body: ! '{"success":false,"error":{"type":"unknown","message":"An unknown error
+      occurred."}}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/startups/search?slug=angellist
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sun, 18 Sep 2011 22:13:15 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '998'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '154'
+      etag:
+      - ! '"78f3404cc0cf84ff4527ba3a450d3dd2"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '1347'
+    body: ! '{"id":6702,"hidden":false,"name":"AngelList","angellist_url":"http://angel.co/angellist","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/6702-766d1ce00c99ce9a5cbc19d0c87a436e-medium.","product_desc":"AngelList
+      is an online community that helps startups find investors. And investors find
+      startups. Currently works across Series Seed, A, B, and C.","follower_count":354,"company_url":"http://angel.co","twitter_url":"http://twitter.com/angellist","blog_url":"http://blog.angel.co","video_url":"","markets":[{"id":448,"tag_type":"MarketTag","name":"startups","display_name":"Startups","angellist_url":"http://angel.co/startups-1"},{"id":856,"tag_type":"MarketTag","name":"venture
+      capital","display_name":"Venture Capital","angellist_url":"http://angel.co/venture-capital"}],"locations":[{"id":1692,"tag_type":"LocationTag","name":"san
+      francisco","display_name":"San Francisco","angellist_url":"http://angel.co/san-francisco"}],"status":{"id":18752,"message":"Hackers,
+      say hello to the AngelList API http://angel.co/api. Hack venture capital. Hack
+      startups.","created_at":"2011-09-14T20:56:09Z"},"screenshots":[{"thumb":"https://s3.amazonaws.com/screenshots.angel.co/98/6702/009cff275fb96709c915c4d4abc943d6-thumb.jpg","original":"https://s3.amazonaws.com/screenshots.angel.co/98/6702/009cff275fb96709c915c4d4abc943d6-original.jpg"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/startups/search?slug=something_missing
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 404
+      message: Not Found
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sun, 18 Sep 2011 22:23:25 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '404'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      cache-control:
+      - no-cache
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '997'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '25'
+      content-length:
+      - '97'
+    body: ! '{"success":false,"error":{"type":"not_found","message":"The specified
+      item could not be found."}}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/startups/search?domain=angel.co
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sun, 18 Sep 2011 22:48:59 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '996'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '300'
+      etag:
+      - ! '"78f3404cc0cf84ff4527ba3a450d3dd2"'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '1347'
+    body: ! '{"id":6702,"hidden":false,"name":"AngelList","angellist_url":"http://angel.co/angellist","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/6702-766d1ce00c99ce9a5cbc19d0c87a436e-medium.","product_desc":"AngelList
+      is an online community that helps startups find investors. And investors find
+      startups. Currently works across Series Seed, A, B, and C.","follower_count":354,"company_url":"http://angel.co","twitter_url":"http://twitter.com/angellist","blog_url":"http://blog.angel.co","video_url":"","markets":[{"id":448,"tag_type":"MarketTag","name":"startups","display_name":"Startups","angellist_url":"http://angel.co/startups-1"},{"id":856,"tag_type":"MarketTag","name":"venture
+      capital","display_name":"Venture Capital","angellist_url":"http://angel.co/venture-capital"}],"locations":[{"id":1692,"tag_type":"LocationTag","name":"san
+      francisco","display_name":"San Francisco","angellist_url":"http://angel.co/san-francisco"}],"status":{"id":18752,"message":"Hackers,
+      say hello to the AngelList API http://angel.co/api. Hack venture capital. Hack
+      startups.","created_at":"2011-09-14T20:56:09Z"},"screenshots":[{"thumb":"https://s3.amazonaws.com/screenshots.angel.co/98/6702/009cff275fb96709c915c4d4abc943d6-thumb.jpg","original":"https://s3.amazonaws.com/screenshots.angel.co/98/6702/009cff275fb96709c915c4d4abc943d6-original.jpg"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.angel.co:443/1/startups/search?domain=crabjuice.cz
+    body: !!null 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 404
+      message: Not Found
+    headers:
+      server:
+      - nginx/0.8.54
+      date:
+      - Sun, 18 Sep 2011 22:49:10 GMT
+      content-type:
+      - application/json; charset=utf-8
+      status:
+      - '404'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      cache-control:
+      - no-cache
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '995'
+      x-thanks:
+      - For using AngelList. Rock on.
+      x-runtime:
+      - '90'
+      content-length:
+      - '97'
+    body: ! '{"success":false,"error":{"type":"not_found","message":"The specified
+      item could not be found."}}'
+    http_version: '1.1'
