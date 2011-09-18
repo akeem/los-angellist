@@ -1,8 +1,10 @@
 require "los-angellist/version"
 require "los-angellist/user_builder"
 require "los-angellist/user"
+require "los-angellist/tag"
 require "los-angellist/status_update"
 require "los-angellist/startup_role"
+require "los-angellist/tag_builder"
 
 require 'faraday'
 require 'faraday_middleware'
